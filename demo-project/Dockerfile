@@ -10,6 +10,6 @@ WORKDIR /home/ubuntu/project/
 COPY . /var/ww/html/
 
 
-CMD ["/usr/sbin/htpd",  ]"-D". "FOREGROUND"]
+CMD ["/usr/sbin/htpd",  "-D", "FOREGROUND"]
 
 EXPOSE 80  
