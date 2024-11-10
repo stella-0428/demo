@@ -1,0 +1,10 @@
+- host: node
+  become: true
+  connection: ssh
+  tasks: 
+    - name: using deployment yaml
+      command: kubectl apply -f /home/ubuntu/demo-project/Deployment.yml
+      name: using deployment yaml
+      command: kubectl apply -f /home/ubuntu/demo-project/service.yml
+      
+
